@@ -1,0 +1,316 @@
+*{
+   margin: 0;
+   font-family: 'Segoe UI', sans-serif;
+}
+body{
+   background: #005eff;
+   height: 1000vh;
+}
+nav{
+   background: #232323;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 14px 1px;
+   z-index: 999;
+   position: fixed;
+   width: 100%;
+   border-top: 2px solid rgba(0, 0, 0, 0.425);
+}
+.lii{
+   display: flex;
+
+}
+.liihome{
+   list-style-type: none;
+   margin: 0 10px;
+   font-weight: 700;
+   color: #ffffff;
+}
+.liihome::after{
+   content: '';
+   background: rgb(255, 253, 253);
+   width: 0%;
+   height: 2px;
+   margin: auto;
+   transition: 0.5s;
+   display: block;
+}
+.liihome:hover::after{
+   width: 100%;
+}
+.aaa{
+   text-decoration: none;
+}
+.mango{
+   color: #b2ed02;
+   margin-left: 10px;
+}
+
+.home__menu{
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+}
+
+.sozdor{
+   display: flex;
+   justify-content: center;
+   color: #212329;
+   font-size: 15px;
+   margin-top: 20px;
+   animation-name: raider1;
+   animation-duration: 3s;
+   animation-iteration-count: 1;
+   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes raider1{
+   from {
+      margin-left: 100%;
+      width: 100%;
+      font-size: 0;
+   }
+   to{
+      margin-bottom: 0%;
+      width: 100%;
+   }
+}
+.but{
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+   
+}
+.inbut{
+   height: 45px;
+   font-size: 20px;
+   font-weight: 700;
+   border-radius: 10px;
+   color: #ffffff;
+   background: #ffffff4e;
+   animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+   border: 0;
+   animation-name: raider2;
+   animation-duration: 3s;
+   animation-iteration-count: 1;
+   box-sizing: border-box;
+   transition: 0.3s;
+}
+@keyframes raider2{
+   from {
+      margin-block-start: 100%;
+      width: 100%;
+      font-size: 0;
+   }
+   to{
+      margin-bottom: 0%;
+      width: 100%;
+   }
+}
+.sozdor1{
+   font-family: 'Segoe UI', sans-serif;
+   font-weight: 600;
+   color: #e6f1ffad;
+}
+
+header{
+   height: 100vh;
+   background: #1100ff;
+   justify-content: space-between;
+   z-index: inherit;
+}
+.kosh{
+   margin-top: 150px;
+   font-size: 65px;
+   position: relative;
+   animation-duration: 2s;
+   animation-name: raider;
+   animation-iteration-count: 1;
+   animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+   color: #e6f1ff;
+}
+@media screen and (max-width: 900px) {
+   nav{
+      font-size: 11px;
+   }
+   .mango{
+      font-size: 20px;
+      font-weight: 800;
+   }
+   .sozdor1{
+      font-size: 13px;
+   }
+   .kosh{
+      margin-top: 180px;
+      font-size: 25px;
+      font-weight: 800;
+      position: relative;
+      animation-duration: 2s;
+      animation-name: raider;
+      animation-iteration-count: 1;
+      animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      color: #e6f1ff;
+   }
+   .but{
+      display: flex;
+      justify-content: center;
+      margin-top: 120px;
+      
+   }
+   .inbut{
+      height: 40px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 10px;
+   }
+}
+@keyframes raider{
+   from {
+      padding: 100%;
+      width: 100%;
+   }
+   to{
+      margin-bottom: 0%;
+      width: 100%;
+   }
+}
+
+/* SECTION */
+section{
+   height: 100vh;
+   background: #d20303;
+   justify-content: center;
+   padding-top: 15px;
+   z-index: inherit;
+}
+.about__we{
+   display: flex;
+   justify-content: space-around;
+   color: #e6f1ff;
+}
+.bizjonundo{
+   font-size: 35px;
+   font-weight: 900;
+   margin-top: 70px;
+   margin-bottom: 40px;
+}
+.about__photo{
+   display: flex;
+   justify-content: space-evenly;
+   
+}
+.photo1{
+   width: 250px;
+   height: 250px;
+   background: #000000;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   box-sizing: border-box;
+   transition: 0.3s;
+}
+
+/* TEN */
+.ten:hover{
+   box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.623);
+}
+.ten1:hover{
+   box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.623);
+}
+.imya{
+   display: flex;
+   justify-content: space-evenly;
+}
+.imyya{
+   width: 250px;
+   height: 50px;
+   background: #d6d8db;
+   border-bottom-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+}
+.h1{
+   display: flex;
+   justify-content: center;
+   font-size: 15px;
+   font-weight: 700;
+   margin-top: 12px;
+   font-family: 'Segoe UI', sans-serif;
+   color: #000000;
+}
+.read__more{
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 25px;
+}
+.rm1{
+   display: flex;
+   margin-right: 55px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background: #000;
+   box-sizing: border-box;
+   transition: 0.3s;
+}
+.rm2{
+   display: flex;
+   margin-left: 55px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background: #000;
+   box-sizing: border-box;
+   transition: 0.3s;
+}
+@media screen and (max-width: 900px) {
+   .bizjonundo{
+      font-size: 25px;
+      font-weight: 900;
+      margin-top: 80px;
+      margin-bottom: 40px;
+   }
+   .photo1{
+      width: 170px;
+      height: 170px;
+      background: #000000;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      box-sizing: border-box;
+      transition: 0.3s;
+   }
+   .imyya{
+      width: 170px;
+      height: 40px;
+      background: #d6d8db;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+   }
+   .h1{
+      display: flex;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 800;
+      margin-top: 12px;
+      font-family: 'Segoe UI', sans-serif;
+      color: #000000;
+   }
+   .rm1{
+      display: flex;
+      margin-right: 25px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #000;
+      box-sizing: border-box;
+      transition: 0.3s;
+   }
+   .rm2{
+      display: flex;
+      margin-left: 55px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #000;
+      box-sizing: border-box;
+      transition: 0.3s;
+   }
+}
